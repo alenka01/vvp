@@ -10,5 +10,5 @@ int main()
     c = b;
     b = a;
     a = c;
-    printf("Ответ %f%f\n", a, b);
+    printf("Ответ %.3f %.3f\n", a, b);
 }
