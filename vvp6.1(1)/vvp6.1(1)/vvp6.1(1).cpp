@@ -4,11 +4,11 @@
 int main()
 {
     setlocale(LC_ALL, "Rus");
-    int a, b, c;
+    float a, b, c;
     printf("Введите два числа:");
     scanf("%d %d", &a, &b);
     c = b;
     b = a;
     a = c;
-    printf("Ответ %d %d\n", a, b);
+    printf("Ответ %f%f\n", a, b);
 }
