@@ -8,6 +8,6 @@ int main()
     float a, y;
     printf("Введите значение A: ");
     scanf("%f", &a);
-     y = pow(a,6);
-    printf("Ответ %f\n", y * a * a);
+     y = pow(a,5);
+    rintf("Ответ %f\n", y * a * a*a);
 }
