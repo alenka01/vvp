@@ -4,12 +4,12 @@
 int main()
 {
     setlocale(LC_ALL, "Rus");
-    int a, b, c, k;
+    float a, b, c, k;
     printf("Введите три числа:");
-    scanf("%d %d %d", &a, &b, &c);
+    scanf("%f %f %f", &a, &b, &c);
     k = a;
     a = c;
     c = b;
     b = k;
-    printf("Ответ %d %d %d\n", a, b, c);
+    printf("Ответ %.3f %.3f %.3f\n", a, b, c);
 }
