@@ -6,7 +6,7 @@ int main()
     setlocale(LC_ALL, "Rus");
     float a, b, c;
     printf("Введите два числа:");
-    scanf("%d %d", &a, &b);
+    scanf("%f %f", &a, &b);
     c = b;
     b = a;
     a = c;
