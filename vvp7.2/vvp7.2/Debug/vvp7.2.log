@@ -1,0 +1,3 @@
+﻿  vvp7.2.cpp
+C:\Users\staro\Documents\ввп(действующая)\vvp7.2\vvp7.2\vvp7.2.cpp(11,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  vvp7.2.vcxproj -> C:\Users\staro\Documents\ввп(действующая)\vvp7.2\Debug\vvp7.2.exe
