@@ -1,0 +1,15 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include <stdio.h>
+#include <locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, k;
+	printf("Введите число: ");
+	scanf("%d", &a);
+	c = a % 10;
+	k = a / 10;
+	b = round(c * 10) + k;
+	printf("Новое число: %d\n", b);
+}
