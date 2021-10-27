@@ -1,0 +1,15 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, k;
+	printf("Введите размер длин отрезков A и B соответственно:");
+	scanf("%d%d", &a, &b);
+	k = a;
+	c = 0;
+	for (k; k >= b; k -= b)
+		c++;
+	printf("Количество длин отрезков B в A:%d\n", c);
+}
