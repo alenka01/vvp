@@ -1,0 +1,13 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a,l;
+	printf("Введите размер файла в байтах ");
+	scanf("%d", &a);
+	l =(float) a / 1024;
+	printf("Размер файла в килобайтах: %g\n", rint(l));
+}
