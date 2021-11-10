@@ -1,0 +1,15 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a,b,c, x,l,k;
+	printf("Введите стороны A,B и C соответственно ");
+	scanf("%d%d%d", &a, &b, &c);
+	x = (a / c) * (b / c);
+	l = a * b - c * c * x;
+	printf("Количество квадратов: %d\n Площадь незанятой части: %d\n", x,l);
+
+}
