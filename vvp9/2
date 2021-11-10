@@ -1,0 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main() 
+{
+	setlocale(LC_ALL, "Rus");
+	int k, x;
+	printf("Введите целое число K ");
+	scanf("%d", &k);
+	x = k%7;
+	printf("Номер дня недели %d\n", x);
+
+}
