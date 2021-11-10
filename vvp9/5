@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x, l, k;
+	printf("Введите год ");
+	scanf("%d", &a);
+	if (a % 10 >= 1 && ((a / 100) / 10) > 0)
+	{
+		x = a / 100;
+		k = x + 1;
+	}
+	else
+		k = a / 100;
+	printf("Столетие: %d\n", k);
+
+}
