@@ -1,0 +1,145 @@
+№1
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x;
+	printf("Введите значения А и В: ");
+	scanf("%d%d", &a, &b);
+	if (a != b) {
+		if (a > b)
+			b = a;
+		else
+			a = b;
+	}
+	else 
+	{
+		a = 0;
+		b = 0;
+	}
+		
+		printf("a= %d b= %d", a,b);
+}
+№2
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x;
+	printf("Введите значения А,В и С: ");
+	scanf("%d%d%d", &a, &b, &c);
+	if (a>b && c>b) {
+		x = a + c;
+	}
+	else
+	{
+		if (b > a && c > a) 
+		{
+			x = b + c;
+		}
+		else 
+		{
+			if (a > c && b > c) 
+			{
+				x = a + b;
+			}
+		}
+
+	}
+
+	printf("Сумма наибольших из этих чисел равна %d", x);
+}
+№3
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x;
+	printf("Введите значения А,В и С: ");
+	scanf("%d%d%d", &a, &b, &c);
+	if (abs(a-b)>abs(a-c)) {
+		x = abs(a - c);
+		printf("Ближе к А точка C, расстояние: %d", x);
+	}
+	else
+	{
+		x = abs(a - b);
+		printf("Ближе к А точка B, расстояние: %d", x);
+
+	}
+}
+№4
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int y, x;
+	printf("Введите координаты х и у: ");
+	scanf("%d%d", &x, &y);
+	if (x >0 && y>0) 
+		printf("Первая координатная четверть");
+	if (x < 0 && y > 0)
+		printf("Вторая координатная четверть");
+	if (x < 0 && y < 0)
+		printf("Третья координатная четверть");
+	if (x > 0 && y < 0)
+		printf("Четвертая координатная четверть");
+}
+№5
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int y, x;
+	printf("Введите число: ");
+	scanf("%d", &x);
+	if (x > 0 && x%2==0)
+		printf("Положительное четное число");
+	if (x > 0 && x % 2 != 0)
+		printf("Положительное нечетное число");
+	if (x < 0 && x % 2 == 0)
+		printf("Отрицательное четное число");
+	if (x < 0 && x % 2 != 0)
+		printf("Отрицательное нечетное число");
+	if (x == 0)
+		printf("Нулевое число");
+}
+№6
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int y, x;
+	printf("Введите число: ");
+	scanf("%d", &x);
+	if (x/10==0 && x%2==0)
+		printf("Однозначное четное число");
+	if (x / 10 == 0 && x % 2 != 0)
+		printf("Однозначное нечетное число");
+	if (x / 10 != 0 && x / 100 == 0 && x % 2 != 0)
+		printf("Двузначное нечетное число");
+	if (x / 10 != 0 && x / 100 == 0 && x % 2 == 0)
+		printf("Двузначное четное число");
+	if (x / 100 != 0 && x/1000==0 && x % 2 == 0)
+		printf("Трехзначное четное число");
+	if (x / 100 != 0 && x/1000==0 && x % 2 != 0)
+		printf("Трехзначное нечетное число");
+}
