@@ -1,0 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int k,n, x;
+	printf("Введите целое число K и номер, под которым было 1 января ");
+	scanf("%d%d", &k, &n);
+	x = (k + n - 1) % 7;
+	printf("Номер дня недели %d\n", x);
+
+}
