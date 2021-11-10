@@ -1,0 +1,129 @@
+№1
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x;
+	printf("Введите значения A и B соответственно: ");
+	scanf("%d%d", &a, &b);
+	if (a > 2 && b <= 3) {
+		printf("A > 2 и B <= 3: True");
+	}
+	else
+		printf("A > 2 и B <= 3: False");
+
+}
+№2
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x;
+	printf("Введите значения A, B и C соответственно: ");
+	scanf("%d%d%d", &a, &b,&c);
+	if (a<b && b<c) {
+		printf("A < B < C: True");
+	}
+	else
+		printf("A < B < C: False");
+
+}
+№3
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x;
+	printf("Введите число: ");
+	scanf("%d", &a);
+	b = 0;
+	x = a;
+	while (a > 0)
+	{
+		a = a / 10;
+		b++;
+	}
+	if (b == 2 && x % 2 ==0) {
+		printf("Данное число является четным двузначным: True");
+	}
+	else
+		printf("Данное число является четным двузначным: False");
+}
+№4
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a ;
+	printf("Введите число: ");
+	scanf("%d", &a);
+	
+	if (a/100>(a/10)%10 && (a / 10) % 10 >a%10 || a / 100 < (a / 10) % 10 && (a / 10) % 10 < a % 10) {
+		printf("Цифры данного числа образуют возрастающую или убывающую последовательность: True");
+	}
+	else
+		printf("Цифры данного числа образуют возрастающую или убывающую последовательность: False");
+}
+№5
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a;
+	printf("Введите число: ");
+	scanf("%d", &a);
+	if (a / 1000==a%10 && (a/100)%10==(a/10)%10 ) {
+		printf("Данное число читается одинаково слева направо и справа налево: True");
+	}
+	else
+		printf("Данное число читается одинаково слева направо и справа налево: False");
+}
+№6
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a,b,c,x;
+	printf("Введите стороны А, В и С соответственно: ");
+	scanf("%d%d%d", &a, &b,&c);
+	if (a*a+b*b==c*c || c * c + a *a == b*b || c * c + b * b == a*a) {
+		printf("Треугольник со сторонами a, b, c является прямоугольным: True");
+	}
+	else
+		printf("Треугольник со сторонами a, b, c является прямоугольным: False");
+}
+№7
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x;
+	printf("Введите стороны А, В и С соответственно: ");
+	scanf("%d%d%d", &a, &b, &c);
+	if (a + b>c  && c+ a>b && c + b>a) {
+		printf("Существует треугольник со сторонами a, b, c: True");
+	}
+	else
+		printf("Существует треугольник со сторонами a, b, c: False");
+}
