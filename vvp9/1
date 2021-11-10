@@ -1,0 +1,13 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main() 
+{ 
+	setlocale(LC_ALL, "Rus");
+	int n, x;
+	printf("Сколько прошло времени с начала суток(в секундах) ");
+	scanf("%d", &n);
+	x = n % 60;
+	printf("Прошло с последней минуты %d секунд", x);
+}
