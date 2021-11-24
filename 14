@@ -1,0 +1,121 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x, y, nm, n,pp,g1,g2;
+	float l, k, d, m,p;
+	printf("Введите номер задания: ");
+	scanf("%d", &nm);
+	if (nm == 1)
+	{
+		printf("Введите числа A и B ");
+		scanf("%d%d", &a,&b);
+		if (a < b)
+		{
+			for (int i = a; i <= b;)
+			{
+				for (int j = 1; j <= i; j++)
+				{
+					printf("%d ", i);
+				}
+				i += 1;
+			}
+
+		}
+		else
+			printf("error");
+		
+	}
+	if (nm == 2)
+	{
+		printf("Введите длины отрезков A и B ");
+		scanf("%d%d", &a, &b);
+		if (a > b)
+		{
+			x = a;
+			for (a; a >= b;)
+			{
+				a = a - b;
+				if (b <= x)
+				{
+					x = x - b;
+				}
+				
+			}
+				printf("%d", x);
+
+		}
+		else 
+		{
+			printf("error");
+		}
+	}
+	if (nm == 3)
+	{
+		printf("Введите число: ");
+		scanf("%d", &a);
+		b = 1;
+		x = 1;
+		while(b<a)
+		{
+				x = x + 1;
+				b = b + x;
+		}
+		printf("Наименьшее число: %d сумма: %d \n ", x, b);
+	}
+	if (nm == 4)
+	{
+		printf("Введите P: ");
+		scanf("%f", &p);
+		n = 1100;
+		l = 1000;
+		c = 0;
+		if (p > 0 && p < 25) 
+		{
+			while(l<=1100)
+			{
+				l += l * (p / 100);
+				c++;
+			}
+			printf("Количество месяцев: %d вклад: %g", c, l);
+		}
+		else
+		{
+			printf("error");
+		}
+	}
+	if (nm == 5)
+	{
+		printf("Введите числа A и B: ");
+		scanf("%d%d", &a, &b);
+		while (a!=0 && b!=0)
+		{
+			if (a > b)
+				a = a % b;
+			else
+				b = b % a;
+
+		}
+		printf("%d\n", a+b);
+	}
+	if (nm == 6)
+	{
+		printf("Введите число Фибоначчи : ");
+		scanf("%d", &a);
+		int g = 0;
+		g1 = 1;
+		g2 = 1;
+		pp = 1;
+		while(g<a)
+		{
+			pp++;
+			g1 = g2;
+			g2 = g;
+			g = g1 + g2;
+		}
+		printf("%d\n", pp);
+	}
+}
