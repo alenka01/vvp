@@ -1,0 +1,73 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include<locale.h>
+#include<math.h>
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int a, b, c, x, y, nm, n;
+	float l,k,d,m;
+	printf("Введите номер задания: ");
+	scanf("%d", &nm);
+	if (nm == 1) 
+	{
+		printf("Введите цену за 1 кг конфет ");
+		scanf("%f", &l);
+		for (float i = 0.1; i <= 1.1 ;i+=0.1) 
+		{
+			printf("Цена за %g конфет равна %g \n ", i, l * i);
+		}
+	}
+	if (nm == 2) 
+	{
+		printf("Введите количество сомножителей: ");
+		scanf("%d", &n);
+		l = 1;
+		k = 1.1;
+		for (int i = 1; i < n;i++) 
+		{
+			l = l * k;
+			k += 0.1;
+		}
+		printf("%g", l);
+	}
+	if (nm == 3)
+	{
+		printf("Введите число: ");
+		scanf("%d", &n);
+		l = 1;
+		a = 1;
+		for (int i = 1; i < 2*n-1;)
+		{
+			i = i + 2;
+			a = a + i;
+			printf("%d \n",a );
+			
+		}
+	}
+	if (nm == 4)
+	{
+		printf("Введите вещественное число А и степень N(N>0): ");
+		scanf("%f%f", &l, &k);
+		d = 1;
+		for (int i = 1; i <= k; i++)
+		{
+			d = d + pow(l,i);
+
+		}
+		printf("%g \n", d);
+	}
+	if (nm == 5)
+	{
+		printf("Введите вещественное число А и степень N(N>0): ");
+		scanf("%f%f", &l, &k);
+		d = 1;
+		m = -1;
+		for (int i = 1; i <= k; i++)
+		{
+			d = d + pow(l, i)*pow(m,i);
+
+		}
+		printf("%g \n", d);
+	}
+}
